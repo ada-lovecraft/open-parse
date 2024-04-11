@@ -7,9 +7,9 @@ We find it tends to work well on dense tables, with a relatively simple structur
 ### Parameters:
 | Name                  | Type      | Description                                                                 | Default |
 |-----------------------|-----------|-----------------------------------------------------------------------------|---------|
-| parsing_algorithm     | `Literal['unitable']` | The library used for parsing, in this case, unitable.                       | None    |
+| parsing_algorithm     | `Literal['pymupdf']` | The library used for parsing, in this case, `pymupdf`.                       | None    |
 | min_table_confidence  | `float`   | The minimum confidence score for a table to be extracted. Default to 0.75.  | 0.75    |
-| table_output_format   | `Literal['html']` | The format of the extracted tables. Currently only support html.            | 'html'  |
+| table_output_format   | `Literal['html'|'mardkown]` | The format of the extracted tables. Currently `html` and `markdown` are supported.            | 'html'  |
 
 
 ### Example
